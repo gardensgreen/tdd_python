@@ -1,5 +1,8 @@
-from roman_numerals import parse
+from app.roman_numerals import parse
+from pytest import mark
 
-def test_roman_numeral_parser():
-    value = parse("IX")
-    assert value == 9
+
+@mark.parametrize("s,expected", [("IX", 9), ("X", 10)])
+def test_roman_numeral_parser(s, expected):
+    value = parse(s)
+    assert value == expected
