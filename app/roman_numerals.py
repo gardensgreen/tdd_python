@@ -1,3 +1,5 @@
-def parse(number):
-    return 1
-
+def parse(roman):
+    if roman == "I":
+        return 1
+    else:
+        return 2
