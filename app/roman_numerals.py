@@ -7,5 +7,7 @@ def parse(roman):
         return 3
     elif roman == "IV":
         return 4
-    else:
+    elif roman == "V":
         return 5
+    else:
+        return 6
