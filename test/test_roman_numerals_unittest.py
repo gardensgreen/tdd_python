@@ -17,3 +17,8 @@ class TestRomanNumerals(unittest.TestCase):
         value = parse("III")
 
         self.assertEqual(value, 3)
+
+    def test_iv(self):
+        value = parse("IV")
+
+        self.assertEqual(value, 4)
